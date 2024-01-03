@@ -10,6 +10,7 @@ RUN apt-get update \
     && git -C "$(rbenv root)"/plugins/ruby-build pull \
     && rbenv install 3.1.4 \
     && rbenv global 3.1.4 \
+    && gem install nokogiri -v 1.15.5
     && gem install shopify-cli -N
 
 ###
